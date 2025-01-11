@@ -18,7 +18,8 @@
         </ul>
         <br/>
         <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Back</a>
-        <a class="btn btn-danger" href="{% url 'delete_record' client_record.id%}" role="button">Delete</a>
+        <a class="btn btn-warning" href="{% url 'update_record' client_record.id %}" role="button">Edit</a>
+        <a class="btn btn-danger" href="{% url 'delete_record' client_record.id %}" role="button">Delete</a>
     </div>
 </div>
 
