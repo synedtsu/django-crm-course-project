@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="card" style="width: 25rem;">
+    <div class="card-body">
+        <h2 class="card-title">Client record:</h2>
+        <h5 class="card-subtitle mb-2 text-body-secondary">{{client_record.first_name}} {{client_record.last_name}}</h5>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">E-mail: {{ client_record.email }}</li>
+            <li class="list-group-item">Phone: {{ client_record.phone }}</li>
+            <li class="list-group-item">Address: {{ client_record.address }}</li>
+            <li class="list-group-item">City: {{ client_record.city }}</li>
+            <li class="list-group-item">Country: {{ client_record.country }}</li>
+            <li class="list-group-item">Zipcode: {{ client_record.zipcode }}</li>
+            <li class="list-group-item">Created: {{ client_record.created_at }}</li>
+            <li class="list-group-item">ID: {{ client_record.id }}</li>
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}
